@@ -30,8 +30,6 @@
     &__user,
     &-menu
       display: none
-    &-top
-      &__menu-button
   .menu
     &-button
       padding: 0
@@ -47,6 +45,21 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .hotel
+    &-header
+      &__info
+        flex-basis: 100%
+      &__name
+        margin-top: 10px
+        flex-basis: 100%
+      &__ratings
+        display: none
+      &__wrapper
+        justify-content: space-between
+      &__stars
+        flex-basis: auto
+      &__offer
+        order: -1
 @media (max-width: 576px)
   .logo
     width: 99px

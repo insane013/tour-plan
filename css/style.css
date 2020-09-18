@@ -643,6 +643,25 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .hotel-header__info {
+    flex-basis: 100%;
+  }
+  .hotel-header__name {
+    margin-top: 10px;
+    flex-basis: 100%;
+  }
+  .hotel-header__ratings {
+    display: none;
+  }
+  .hotel-header__wrapper {
+    justify-content: space-between;
+  }
+  .hotel-header__stars {
+    flex-basis: auto;
+  }
+  .hotel-header__offer {
+    order: -1;
+  }
 }
 
 @media (max-width: 576px) {
