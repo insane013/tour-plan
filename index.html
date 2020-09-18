@@ -29,11 +29,9 @@
               placeholder="Search Location"
             />
             <button class="search__button">
-              <img
-                class="search__ico"
-                src="img/search.svg"
-                alt="icon: Search"
-              />
+              <svg class="search__button-ico">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
             </button>
           </form>
 
@@ -84,5 +82,64 @@
         <!-- /.container -->
       </nav>
     </header>
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <span class="breadcrumb-list__link">Grand Hilton Hotel</span>
+          </li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- /.breadcrumb -->
+    <section class="hotel">
+      <div class="container">
+        <div class="hotel-header">
+          <div class="hotel-header__info">
+            <div class="hotel-header__wrapper">
+              <div class="stars hotel-header__stars">
+                <svg class="stars__img">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="stars__img">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="stars__img">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="stars__img">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="stars__img">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <h1 class="hotel-header__name">GRAND HILTON HOTEL</h1>
+              <span class="offer hotel-header__offer">Flash Offer</span>
+            </div>
+            <p class="hotel-header__description">
+              Half-Board / All Inclusive + Complimentary Activities + Child
+              Stays Free
+            </p>
+          </div>
+          <!-- /.hotel-header__content-wrapper -->
+          <div class="ratings hotel-header__ratings">
+            <span class="ratings__text">User Rattings</span>
+            <span class="ratings__rate ratings__rate--current">4.5</span>
+            <span class="ratings__rate ratings__rate--max">5</span>
+          </div>
+        </div>
+        <!-- /.hotel-header -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hotel -->
   </body>
 </html>

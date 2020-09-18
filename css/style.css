@@ -5,6 +5,7 @@
 body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
+  background-color: #F5FAFE;
 }
 
 img {
@@ -435,6 +436,12 @@ template {
   border-radius: 0px 6px 6px 0px;
 }
 
+.search__button-ico {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
 .user {
   display: flex;
   align-items: center;
@@ -453,6 +460,132 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.breadcrumb {
+  padding: 18px 0;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
+}
+
+.breadcrumb-list__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+
+.hotel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-header__info {
+  width: 392px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-header__description {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.hotel-header__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hotel-header__stars {
+  flex-basis: 100%;
+}
+
+.hotel-header__name {
+  margin: 0;
+  margin-top: 4px;
+  margin-right: 14px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hotel-header__offer {
+  margin-top: 4px;
+}
+
+.offer {
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  background-color: #EC1F46;
+  padding: 4px 9px;
+  border-radius: 3px;
+}
+
+.ratings {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 65px;
+  min-height: 45px;
+  text-align: center;
+  justify-content: center;
+  padding: 7px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.ratings__text {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  flex-basis: 100%;
+  margin-bottom: 2px;
+}
+
+.ratings__rate--current {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.ratings__rate--current::after {
+  content: "/";
+  font-size: 14px;
+}
+
+.ratings__rate--max {
+  font-size: 10px;
+  line-height: 13px;
+  align-self: flex-end;
+}
+
+.stars__img {
+  width: 8px;
+  height: 8px;
 }
 
 @media (max-width: 1200px) {
