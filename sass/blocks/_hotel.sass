@@ -29,6 +29,17 @@
       line-height: 30px
     &__offer
       margin-top: 4px
+  &-grid
+    display: flex
+    justify-content: space-between
+    &__right-wrapper
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+  &__map
+    width: 350px
+    height: 213px
+    border-radius: 4px
 
 .offer
   font-size: 10px;
@@ -76,6 +87,7 @@
     width: 8px
     height: 8px
 
+
 .swiper-container
   width: 100%
   height: 450px
@@ -113,4 +125,75 @@
     &--next
       right: 0
       background-image: url(../img/arrow-next.svg)
+
+.booking
+  width: 350px
+  background: $dark
+  color: $light
+  border-radius: 8px
+  padding: 29px 29px 26px 26px
+  font-family: Nunito
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+  &__call-center
+    margin-bottom: 17px
+  &__button
+    color: $light
+    width: 100%
+    padding: 13px 0
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-size: 10px
+    line-height: 14px
+  &__price-tag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__type
+    font-size: 12px
+    line-height: 16px
+
+.person-room
+  &__ico
+    fill: $light
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-width: 80px
+    &--guest
+      margin-bottom: 8px
+  &__text
+    font-size: 12px
+    line-height: 16px
+    margin-left: 9px
+.call-center
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__text
+    font-family: Nunito
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__phone-link
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: inherit
+    text-decoration: none
+    // min-width: 80px
+    // display: flex
+    // justify-content: space-between
+    // align-items: center
+  &__phone-ico
+    fill: $light
+    margin-right: 8px
 
