@@ -8,6 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ea66a7e0-bbab-4914-9756-393da01fc2f7"
+      type="text/javascript"
+    ></script>
+    <script src="js/map.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -227,18 +232,7 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="hotel__map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5681.733632668631!2d-80.76326727738463!3d32.14006855613469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc791b7607191b%3A0x98f2b586ea9394e7!2sGrand%20Hilton%20Head%20Inn%2C%20Ascend%20Hotel%20Collection!5e0!3m2!1sru!2s!4v1600856595904!5m2!1sru!2s"
-                width="100%"
-                height="213"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
+            <div class="hotel__map" id="map"></div>
             <!-- /.map hotel__map -->
           </div>
           <!-- /.hotel-grid__wrapper -->
