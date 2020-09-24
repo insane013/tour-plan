@@ -769,9 +769,7 @@ template {
 }
 
 .newsletter {
-  background-image: url("../img/newsletter-bg.jpg");
-  background-size: cover;
-  background-position: center;
+  background: transparent;
   position: relative;
 }
 
