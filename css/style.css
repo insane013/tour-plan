@@ -561,7 +561,6 @@ template {
 .hotel__map {
   width: 350px;
   height: 213px;
-  border-radius: 4px;
 }
 
 .offer {
@@ -762,6 +761,11 @@ template {
 .call-center__phone-ico {
   fill: #ffffff;
   margin-right: 8px;
+}
+
+#map > ymaps {
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
