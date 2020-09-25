@@ -144,55 +144,51 @@
         </div>
         <!-- /.hotel-header -->
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <div class="swiper-container" id="slider">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-1.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-2.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-3.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-4.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-5.jpg"
-                    alt="slide"
-                  />
-                </div>
+          <div class="swiper-container hotel-slider hotel-grid__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide-1.jpg"
+                  alt="slide"
+                />
               </div>
-
-              <!-- If we need navigation buttons -->
-              <button class="slider__button slider__button--prev"></button>
-              <button class="slider__button slider__button--next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide-2.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide-3.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide-4.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide-5.jpg"
+                  alt="slide"
+                />
+              </div>
             </div>
-            <!-- /.swiper-container -->
+
+            <!-- If we need navigation buttons -->
+            <button class="hotel-slider__button hotel-slider__button--prev"></button>
+            <button class="hotel-slider__button hotel-slider__button--next"></button>
           </div>
-          <!-- /.slider hotel__slider -->
+          <!-- /.hotel-slider -->
+
           <div class="hotel-grid__right-wrapper">
             <div class="booking">
               <div class="booking__info">
@@ -265,9 +261,139 @@
       <!-- /.newsletter-wrapper -->
     </section>
     <!-- /.newsletter -->
+    <section class="feedback">
+      <div class="container">
+        <h2 class="feedback__title">What people think about us</h2>
+
+        <div class="swiper-container feedback-slider feedback__review">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="feedback-slider__item">
+                  <div class="feedback__profile">
+                    <img
+                      class="feedback__avatar"
+                      src="img/feedback-1.jpg"
+                      alt="author photo"
+                    />
+                    <h3 class="feedback__name">Megan Fox</h3>
+                    <span class="feedback__date">Stayed 18 Nov. 2019</span>
+                    <div class="stars feedback__rating">
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <!-- /.rating -->
+                  </div>
+                  <!-- /.feedback-slider__profile -->
+                  <p class="feedback__content">
+                    It was very nice hotel with cleanliness. Staff behavior was good and
+                    polite. They welcome us very well. Issue was only that Lift was not in
+                    working and we were allotted to 3rd floor and amenities articles were
+                    in corner of gallery which were giving bad feeling. Breakfast was good
+                    and support of the staff was also very nice. Location is not good as
+                    per atmosphere, it is very nearby most of the popular places but self
+                    location in a narrow street is not good. Overall it was a good
+                    experience and could recommend.
+                  </p>
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide">
+                <div class="feedback-slider__item">
+                  <div class="feedback__profile">
+                    <img class="feedback__avatar" src="img/feedback-2.jpg" alt="author photo" />
+                    <h3 class="feedback__name">Eminem</h3>
+                    <span class="feedback__date">Stayed 18 Nov. 2019</span>
+                    <div class="stars feedback__rating">
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <!-- /.rating -->
+                  </div>
+                  <!-- /.feedback-slider__profile -->
+                  <p class="feedback__content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quidem aut, facere inventore voluptate consectetur corrupti voluptates numquam est obcaecati at odio doloremque porro reiciendis recusandae hic modi corporis! Debitis illo corporis, dolores magni ad id suscipit vero unde at, ipsam repellendus amet dolorem architecto esse quas facilis tempora molestiae!
+                  </p>
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide">
+                <div class="feedback-slider__item">
+                  <div class="feedback__profile">
+                    <img class="feedback__avatar" src="img/feedback-3.jpg" alt="author photo" />
+                    <h3 class="feedback__name">Мирон Янович</h3>
+                    <span class="feedback__date">Stayed 18 Nov. 2020</span>
+                    <div class="stars feedback__rating">
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="stars__img">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <!-- /.rating -->
+                  </div>
+                  <!-- /.feedback-slider__profile -->
+                  <p class="feedback__content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quidem aut, facere inventore voluptate consectetur
+                    corrupti voluptates numquam est obcaecati at odio doloremque porro reiciendis recusandae hic modi corporis!
+                    Debitis illo corporis, dolores magni ad id suscipit vero unde at, ipsam repellendus amet dolorem architecto esse
+                    quas facilis tempora molestiae!
+                  </p>
+                </div>
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+
+            <button class="feedback-slider__button feedback-slider__button--prev"></button>
+            <button class="feedback-slider__button feedback-slider__button--next"></button>
+          </div>
+          <!-- /.swiper-container -->
+        </div>
+        <!-- /.slider feedback__slider-container -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.feedback -->
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
