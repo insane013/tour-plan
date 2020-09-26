@@ -1112,6 +1112,9 @@ template {
     margin-bottom: 20px;
     height: 255px;
   }
+  .card__title {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1215,7 +1218,8 @@ template {
   .activities__title {
     font-size: 18px;
     line-height: 23px;
-    padding-bottom: 36px;
+    margin-top: 0;
+    margin-bottom: 36px;
   }
 }
 
