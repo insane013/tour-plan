@@ -24,9 +24,12 @@
       grid-template: 1fr / 1fr 1fr
     &__image-wrapper
       position: relative
+      overflow: hidden
+      &--big
+        height: 100%
     &__img
-      width: 100%
       height: 100%
+      width: 100%
       object-fit: cover
     &__offer
       position: absolute
@@ -45,6 +48,9 @@
         line-height: 15px
     &__property-wrapper
       padding: 30px 21px 25px 32px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
       background-color: $dark
       &--big
         padding: 46px 21px 30px 43px
@@ -63,7 +69,7 @@
       align-items: center
       min-width: 80px
       &:not(:last-child)
-        margin-bottom: 11px    
+        margin-bottom: 11px  
       &-wrapper
         margin-bottom: 24px
         &--big
@@ -97,6 +103,7 @@
       font-size: 24px
       line-height: 30px
     &__text
+      margin: 0
       font-size: 14px
       line-height: 160.6%
       margin-bottom: 34px

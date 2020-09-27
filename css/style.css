@@ -807,11 +807,16 @@ template {
 
 .package-card__image-wrapper {
   position: relative;
+  overflow: hidden;
+}
+
+.package-card__image-wrapper--big {
+  height: 100%;
 }
 
 .package-card__img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -836,6 +841,9 @@ template {
 
 .package-card__property-wrapper {
   padding: 30px 21px 25px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #0A223D;
 }
 
@@ -916,6 +924,7 @@ template {
 }
 
 .package-card__text {
+  margin: 0;
   font-size: 14px;
   line-height: 160.6%;
   margin-bottom: 34px;
