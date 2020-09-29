@@ -6,9 +6,10 @@
   line-height: 160%
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-template-columns: repeat(4, minmax(max-content, 1fr))
     // grid-template-columns: repeat(4, minmax(300px, max-content))
     grid-gap: 20px
+    column-gap: 100px
     grid-auto-rows: minmax(37px,min-content)
     align-items: start
   &__ico,
@@ -106,3 +107,26 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &-bottom
+    display: flex
+    justify-content: space-between
+    margin-left: auto
+    align-items: center
+    max-width: 700px
+    &__wrapper
+      max-width: 1110px
+      margin: 0 auto
+      margin-top: 94px
+  &__payment
+    width: 136px
+  &-menu
+    list-style: none
+    display: flex
+    &__item:not(:last-child)
+      margin-right: 20px
+    &__link
+      font-size: 12px
+      line-height: 15px
+      text-decoration: none 
+      color: $light
+
