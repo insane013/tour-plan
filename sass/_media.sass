@@ -120,14 +120,62 @@
     width: 92%
   .navbar
     &__search,
-    &__user,
+    &__user
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+          
+    &--mobile
+      &--fixed
+        position: sticky
+        top: 0
+        left: 0
+        z-index: 10
     &-menu
       display: none
+      position: fixed
+      top: 78px
+      padding-top: 30px
+      left: 0
+      right: 0
+      bottom: 0
+      &__list
+        flex-direction: column
+        align-items: center 
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+      &__item
+        &:not(:last-child)
+          margin-bottom: 20px
+        &:nth-child(1)
+          margin-bottom: 27px
+        &:nth-child(2)
+          margin-bottom: 39px   
+        &--mobile
+          &--visible
+            display: block      
+      &--visible
+        display: block
+  .user
+    flex-direction: column
+    &__name
+      &--light
+        margin: 0
+        margin-top: 10px
+        color: $light
+  .search
+    width: 243px
+
   .menu
     &-button
       padding: 0
       border: none
+      outline: none
       height: 11px
+      width: 16px
       display: flex
       flex-direction: column
       justify-content: space-between
