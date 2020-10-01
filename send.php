@@ -17,7 +17,7 @@ if (isset($_POST['sub'])) {
     $sub = true;
 }
 
-if (sub) {
+if ($sub) {
     $body = "
     <h2>Новая подписка</h2>
     <b>Почта:</b> $email
@@ -46,7 +46,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'insane013.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'best-tour-plan@insane013.ru'; // Логин на почте
-    $mail->Password   = 'password'; // Пароль на почте
+    $mail->Password   = '***'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('best-tour-plan@insane013.ru', 'Tour-plan'); // Адрес самой почты и имя отправителя
