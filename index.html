@@ -599,13 +599,18 @@
           <span class="newsletter-title__light">subscribe to our</span>
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             class="subscribe__input"
             type="text"
             placeholder="Your email address"
+            name="email"
           />
-          <button class="button subscribe__button">Send</button>
+          <button class="button subscribe__button" name="sub">Send</button>
         </form>
         <!-- /.subscribe newsletter__subscribe -->
       </div>
@@ -774,7 +779,7 @@
               of chamarel"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="button card__button">Book Now</button>
+            <button class="button card__button" name="book">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -958,24 +963,25 @@
           <h3 class="footer__title footer__title--contact">
             Send us a message
           </h3>
-          <form action="#" class="footer__form">
+          <form action="send.php" method="POST" class="footer__form">
             <input
               type="text"
               class="footer__input"
               placeholder="Your Full Name*"
+              name="name"
             />
             <input
               type="text"
               class="footer__input"
               placeholder="Phone Number*"
+              name="phone"
             />
             <textarea
-              cols="30"
-              rows="10"
               class="footer__message"
               placeholder="Message"
+              name="message"
             ></textarea>
-            <button class="button footer__button">Send</button>
+            <button class="button footer__button" name="send">Send</button>
             <span class="footer__require">* Required Fields</span>
           </form>
         </div>
