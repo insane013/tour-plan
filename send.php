@@ -10,23 +10,44 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$sub = false;
+$sType = 2;
 
+$sendTypes = array(
+    'subscribe' => 'sub',
+    'npm' => 'footer-form-send', //name phone message
+    'npem' => 'booking-modal-send', //name phone email message
+);
 
-if (isset($_POST['sub'])) {
-    $sub = true;
+if (isset($_POST[$sendTypes["subscribe"]])) {
+    $sType = 1;
+}
+if (isset($_POST[$sendTypes["npm"]])) {
+    $sType = 2;
+}
+if (isset($_POST[$sendTypes["npem"]])) {
+    $sType = 3;
 }
 
-if ($sub) {
+if ($sType==1) {
     $body = "
     <h2>Новая подписка</h2>
     <b>Почта:</b> $email
     ";
-} else {
+} 
+if ($sType==2) {
     $body = "
     <h2>Новое обращение</h2>
     <b>Имя:</b> $name<br>
     <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+}
+if ($sType==3) {
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br>
+    <b>Почта:</b> $email<br><br>
     <b>Сообщение:</b><br>$message
     ";
 }
@@ -44,9 +65,9 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'insane013.ru'; // SMTP сервера вашей почты
+    $mail->Host       = 'mail.insane013.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'best-tour-plan@insane013.ru'; // Логин на почте
-    $mail->Password   = '***'; // Пароль на почте
+    $mail->Password   = 'password'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('best-tour-plan@insane013.ru', 'Tour-plan'); // Адрес самой почты и имя отправителя

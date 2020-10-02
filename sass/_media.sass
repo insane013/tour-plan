@@ -113,6 +113,9 @@
         max-width: 700px
         margin: 0 auto
         margin-top: 56px
+  .modal
+    &__button
+      min-width: 90px
 
 @media (max-width: 768px)
   .container
@@ -305,7 +308,13 @@
       &__wrapper
         max-width: 576px
         width: 92%
-
+  .modal
+    &__require
+      order: 3
+      margin-bottom: 15px
+    &__button
+      min-width: 100%
+      order: 4
 
 @media (max-width: 576px)
   .logo
@@ -360,4 +369,8 @@
       flex-basis: 100%
       order: 3
       margin-bottom: 15px
+  .modal
+    &__dialog
+      padding-right: 25px
+      padding-left: 25px
 
