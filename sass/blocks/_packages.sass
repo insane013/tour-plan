@@ -22,6 +22,9 @@
     &--big 
       grid-column-end: span 2
       grid-template: 1fr / 1fr 1fr
+    &__stars
+      display: flex
+      align-items: flex-start
     &__image-wrapper
       position: relative
       overflow: hidden
@@ -72,9 +75,9 @@
       &:not(:last-child)
         margin-bottom: 11px  
       &-wrapper
-        margin-bottom: 24px
+        margin-bottom: 40px
         &--big
-          margin-bottom: 37px
+          margin-bottom: 40px
       &-text
         font-size: 12px
         line-height: 15px
@@ -99,6 +102,7 @@
       font-size: 14px
       line-height: 18px
       margin-bottom: 5px
+      margin-top: -20px
     &__new-price
       font-weight: bold
       font-size: 24px

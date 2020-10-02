@@ -20,6 +20,8 @@
       flex-wrap: wrap
     &__stars
       flex-basis: 100%
+      display: flex
+      align-items: center
     &__name
       margin: 0
       margin-top: 4px
@@ -67,17 +69,17 @@
       position: absolute
       z-index: 10
       top: 50%
-      transform: translateY(-50%)
+      transform: translateY(-51%)
       background: transparent
       background-repeat: no-repeat
       background-position: center
       background-size: 10px
       outline: none
       &--prev
-        left: 0
+        left: 17px
         background-image: url(../img/arrow-prev.svg)
       &--next
-        right: 0
+        right: 17px
         background-image: url(../img/arrow-next.svg)
 
 .offer
@@ -97,7 +99,7 @@
   min-height: 45px
   text-align: center
   justify-content: center
-  padding: 7px
+  padding: 6px
   background-color: $primary
   color: $light
   border-radius: 4px
@@ -125,6 +127,7 @@
   &__img
     width: 8px
     height: 8px
+    margin-right: 2px
 
 .booking
   width: 350px
@@ -158,7 +161,7 @@
     line-height: 33px
   &__type
     font-size: 12px
-    line-height: 16px
+    line-height: 13px
 
 .person-room
   &__ico
@@ -170,6 +173,7 @@
     min-width: 80px
     &--guest
       margin-bottom: 8px
+      margin-top: 4px
   &__text
     font-size: 12px
     line-height: 16px
@@ -196,7 +200,7 @@
     // align-items: center
   &__phone-ico
     fill: $light
-    margin-right: 8px
+    margin-right: 5px
 
 #map>ymaps
   border-radius: 4px

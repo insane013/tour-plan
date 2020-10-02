@@ -30,7 +30,9 @@ $(document).ready(function () {
     $(".navbar-menu").toggleClass("navbar-menu--visible");
   });
 
-  $(".parallax-window").parallax({ imageSrc: "img/newsletter-bg.jpg" });
+  $(".parallax-window").parallax({
+    imageSrc: "img/newsletter-bg.jpg",
+  });
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");

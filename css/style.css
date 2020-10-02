@@ -561,6 +561,8 @@ template {
 
 .hotel-header__stars {
   flex-basis: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .hotel-header__name {
@@ -625,7 +627,7 @@ template {
   position: absolute;
   z-index: 10;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-51%);
   background: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -634,12 +636,12 @@ template {
 }
 
 .hotel-slider__button--prev {
-  left: 0;
+  left: 17px;
   background-image: url(../img/arrow-prev.svg);
 }
 
 .hotel-slider__button--next {
-  right: 0;
+  right: 17px;
   background-image: url(../img/arrow-next.svg);
 }
 
@@ -661,7 +663,7 @@ template {
   min-height: 45px;
   text-align: center;
   justify-content: center;
-  padding: 7px;
+  padding: 6px;
   background-color: #EC1F46;
   color: #ffffff;
   border-radius: 4px;
@@ -695,6 +697,7 @@ template {
 .stars__img {
   width: 8px;
   height: 8px;
+  margin-right: 2px;
 }
 
 .booking {
@@ -743,7 +746,7 @@ template {
 
 .booking__type {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 13px;
 }
 
 .person-room__ico {
@@ -759,6 +762,7 @@ template {
 
 .person-room__info--guest {
   margin-bottom: 8px;
+  margin-top: 4px;
 }
 
 .person-room__text {
@@ -790,7 +794,7 @@ template {
 
 .call-center__phone-ico {
   fill: #ffffff;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 #map > ymaps {
@@ -830,6 +834,11 @@ template {
 .package-card--big {
   grid-column-end: span 2;
   grid-template: 1fr / 1fr 1fr;
+}
+
+.package-card__stars {
+  display: flex;
+  align-items: flex-start;
 }
 
 .package-card__image-wrapper {
@@ -904,11 +913,11 @@ template {
 }
 
 .package-card__info-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .package-card__info-wrapper--big {
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 
 .package-card__info-text {
@@ -943,6 +952,7 @@ template {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 5px;
+  margin-top: -20px;
 }
 
 .package-card__new-price {
