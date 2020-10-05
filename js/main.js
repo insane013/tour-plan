@@ -52,6 +52,7 @@ $(document).ready(function () {
 
     $(target).find(".modal__overlay").addClass("modal__overlay--visible");
     $(target).find(".modal__dialog").addClass("modal__dialog--visible");
+    $("body").addClass("modal-open");
   }
 
   function closeModalBtn(event) {
@@ -59,9 +60,29 @@ $(document).ready(function () {
 
     $(".modal__overlay").removeClass("modal__overlay--visible");
     $(".modal__dialog").removeClass("modal__dialog--visible");
+    $("body").removeClass("modal-open");
   }
   function closeModal() {
     $(".modal__overlay").removeClass("modal__overlay--visible");
     $(".modal__dialog").removeClass("modal__dialog--visible");
+    $("body").removeClass("modal-open");
   }
 });
+
+$(".form").each(function () {
+  $(this).validate({
+    messages: {
+      name: "Please specify your name",
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "We need your phone to contact you",
+        phone: "Your phone must be in format of +7 (XXX) XXX-XX-XX ",
+      },
+    },
+  });
+});
+
+$("[type=phone]").mask("+7 (000) 000-00-00");

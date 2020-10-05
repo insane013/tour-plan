@@ -16,7 +16,8 @@
       grid-template-columns: repeat(3, 300px)
   .footer
     &__input
-      flex-basis: 100%
+      &-wrapper
+        flex-basis: 100%
 
 @media (max-width: 992px)
   .logo
@@ -33,7 +34,7 @@
       padding-bottom: 22px
       &__link
         font-size: 12px
-        line-height: 15px     
+        line-height: 15px
   .search
     &__input
       width: 340px
@@ -106,7 +107,8 @@
         grid-row: 7/8
         grid-column: 1/9
     &__input
-      flex-basis: 48%
+      &-wrapper
+        flex-basis: 48%
     &-bottom
       margin: 0
       &__wrapper
@@ -129,7 +131,7 @@
           display: none
         &--visible
           display: flex
-          
+
     &--mobile
       &--fixed
         position: sticky
@@ -146,7 +148,7 @@
       bottom: 0
       &__list
         flex-direction: column
-        align-items: center 
+        align-items: center
         font-weight: bold
         font-size: 12px
         line-height: 15px
@@ -156,10 +158,10 @@
         &:nth-child(1)
           margin-bottom: 27px
         &:nth-child(2)
-          margin-bottom: 39px   
+          margin-bottom: 39px
         &--mobile
           &--visible
-            display: block      
+            display: block
       &--visible
         display: block
   .user
@@ -303,7 +305,8 @@
         grid-column: 1/2
         grid-row: 8/9
     &__input
-      flex-basis: 100%
+      &-wrapper
+        flex-basis: 100%
     &-bottom
       &__wrapper
         max-width: 576px
@@ -340,7 +343,8 @@
   .subscribe
     width: 100%
     &__input
-      width: 100%
+      &-wrapper
+        width: 100%
     &__button
       padding-left: 20px
   .feedback
@@ -352,7 +356,7 @@
     &__card
       width: 100%
   .package
-    padding: 20px 0 45px 
+    padding: 20px 0 45px
     &__title
       font-size: 25px
       line-height: 35px
@@ -373,4 +377,8 @@
     &__dialog
       padding-right: 25px
       padding-left: 25px
-
+@media ( max-width: 480px )
+  .footer
+    &-menu
+      &__link
+        font-size: 10px

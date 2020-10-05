@@ -1,5 +1,5 @@
 .feedback
-  padding: 70px 0 40px 0
+  padding: 40px 0 70px 0
   &__title
     font-weight: 700
     font-size: 36px
@@ -45,17 +45,17 @@
       position: absolute
       z-index: 10
       top: 50%
-      transform: translateY(-50%)
+      transform: translateY(-100%)
       background: transparent
       background-repeat: no-repeat
       background-position: center
       background-size: 10px
       outline: none
       &--prev
-        left: 0
+        left: 15px
         background-image: url(../img/feedback-arrow-prev.svg)
       &--next
-        right: 0
+        right: 15px
         background-image: url(../img/feedback-arrow-next.svg)
   &__profile
     display: flex
@@ -87,3 +87,6 @@
     font-size: 12px
     line-height: 160%
     text-align: justify
+  &__rating
+    display: flex
+    align-items: flex-start
