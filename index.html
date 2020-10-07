@@ -218,8 +218,7 @@
           <div class="hotel__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.8201554201445!2d-80.75992364557472!3d32.13974698004126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc791b7607191b%3A0x98f2b586ea9394e7!2sGrand%20Hilton%20Head%20Inn%2C%20Ascend%20Hotel%20Collection!5e0!3m2!1sru!2s!4v1601827377999!5m2!1sru!2s"
-              width="100%" height="100%" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
+              allowfullscreen="" aria-hidden="false" tabindex="0" class="map-frame"></iframe>
           </div>
           <!-- /.map hotel__map -->
         </div>
@@ -238,10 +237,10 @@
         <div class="package-card__image-wrapper package-card__image-wrapper--big"
           style="background-image: url('img/package-1.jpg')">
           <!-- <img
-              class="package-card__img"
-              src="img/package-1.jpg"
-              alt="Hotel Blue Haven"
-            /> -->
+                class="package-card__img"
+                src="img/package-1.jpg"
+                alt="Hotel Blue Haven"
+              /> -->
           <span class="offer package-card__offer package-card__offer--big">Flash Offer</span>
         </div>
         <!-- /.package-card__image-wrapper -->
@@ -826,7 +825,7 @@
             <svg class="footer__ico">
               <use xlink:href="img/sprite.svg#footer-map-marker"></use>
             </svg>
-            <p class="footer__info-text address-link" data-toggle="modal" data-href="#modal-map">
+            <p class="footer__info-text address-link">
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
               States
             </p>
@@ -839,7 +838,8 @@
               <span class="footer__info-phone">Tel (business hours) :
                 <a class="footer__info-link" href="tel:2691500">269 1500</a></span>
               <span class="footer__info-phone">Tel (hotline) Monday - Saturday:
-                <a class="footer__info-link" href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)</span>
+                <a class="footer__info-link" href="tel:52566138">52-56-61-38</a>
+                (08:00 am – 20:00 pm)</span>
               <span class="footer__info-phone">Tel (hotline) Sunday:
                 <a class="footer__info-link" href="tel:52566138">52-56-61-38</a>
                 (08:00 am – 14:00 pm)
@@ -857,7 +857,7 @@
       <!-- /.footer__contact-details -->
 
       <div class="footer__contact-form">
-        <h3 class="footer__title footer__title--contact">
+        <h3 class="footer__title footer__title--contact-form">
           Send us a message
         </h3>
         <form action="send.php" method="POST" class="footer__form form">
@@ -865,7 +865,7 @@
             <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required />
           </div>
           <div class="footer__input-wrapper">
-            <input type="phone" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required />
           </div>
           <textarea class="textarea footer__message" placeholder="Message" name="message"></textarea>
           <button class="button footer__button" name="footer-form-send">
@@ -915,7 +915,7 @@
             <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required />
           </div>
           <div class="modal__input-wrapper">
-            <input type="phone" class="input modal__input" placeholder="Phone Number*" name="phone" required />
+            <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required />
           </div>
           <div class="modal__input-wrapper">
             <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
@@ -926,30 +926,6 @@
           </button>
           <span class="modal__require">* Required Fields</span>
         </form>
-      </div>
-      <!-- /.footer__contact-form -->
-    </div>
-    <!-- /.modal__dialog -->
-  </div>
-  <!-- /.modal -->
-  <div class="modal modal-map" id="modal-map">
-    <div class="modal__overlay"></div>
-    <!-- /.modal__overlay -->
-    <div class="modal__dialog modal-map__dialog">
-      <a href="#" class="modal__close">
-        <svg class="modal__close-ico">
-          <use xlink:href="img/sprite.svg#close"></use>
-        </svg>
-      </a>
-      <div class="modal__form-wrapper">
-        <h3 class="modal__title">Map</h3>
-        <div class="modal__map-wrapper">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6293.772687940394!2d-116.26841932147501!3d43.67505274037171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aeffea536c6697%3A0x9af5fb7d53ff97be!2zSGlsbCBSZCwgSWRhaG8sINCh0KjQkA!5e0!3m2!1sru!2s!4v1601907752952!5m2!1sru!2s"
-            width=100% height=100% frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0">
-          </iframe>
-        </div>
       </div>
       <!-- /.footer__contact-form -->
     </div>

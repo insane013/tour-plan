@@ -1,6 +1,7 @@
 .footer
   background-color: $dark
-  padding: 108px 0 46px 0
+  padding-top: 108px
+  padding-bottom: 46px
   color: $footer-text
   font-size: 14px
   line-height: 160%
@@ -26,7 +27,7 @@
   &__item
     display: flex
     align-items: flex-start
-    &--contact
+    &--contact:not(:last-child)
       margin-bottom: 20px
   &__link
     color: inherit
@@ -42,6 +43,8 @@
     &--contact
       margin-bottom: 27px
       padding-right: 50px
+      &-form
+        margin-bottom: 34px
   &__logo
     grid-row: 1/2
     width: 166px
@@ -120,16 +123,17 @@
     margin-left: auto
     align-items: center
     max-width: 700px
+    padding-top: 94px
     &__wrapper
       max-width: 1110px
       margin: 0 auto
-      margin-top: 94px
   &__payment
     width: 136px
   &-menu
     padding: 0
     list-style: none
     display: flex
+    margin: 0
     &__item:not(:last-child)
       margin-right: 15px
     &__link

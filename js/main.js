@@ -28,6 +28,7 @@ $(document).ready(function () {
 
   menuButton.on("click", function () {
     $(".navbar-menu").toggleClass("navbar-menu--visible");
+    $("body").toggleClass("modal-open");
   });
 
   $(".parallax-window").parallax({
@@ -62,6 +63,7 @@ $(document).ready(function () {
     $(".modal__dialog").removeClass("modal__dialog--visible");
     $("body").removeClass("modal-open");
   }
+
   function closeModal() {
     $(".modal__overlay").removeClass("modal__overlay--visible");
     $(".modal__dialog").removeClass("modal__dialog--visible");
@@ -71,6 +73,12 @@ $(document).ready(function () {
 
 $(".form").each(function () {
   $(this).validate({
+    rules: {
+      phone: {
+        required: true,
+        minlength: 18,
+      },
+    },
     messages: {
       name: "Please specify your name",
       email: {
@@ -85,4 +93,4 @@ $(".form").each(function () {
   });
 });
 
-$("[type=phone]").mask("+7 (000) 000-00-00");
+$("[type=tel]").mask("+7 (000) 000-00-00");
