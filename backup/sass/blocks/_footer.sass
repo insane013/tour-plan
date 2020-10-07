@@ -1,0 +1,160 @@
+.footer
+  background-color: $dark
+  padding-top: 108px
+  padding-bottom: 46px
+  color: $footer-text
+  font-size: 14px
+  line-height: 160%
+  &-wrapper
+    display: grid
+    grid-template-columns: 166px 119px 3.3fr 129px 5.3fr 94px 4fr
+    // grid-template-columns: repeat(4, minmax(max-content, 1fr))
+    // grid-gap: 20px
+    column-gap: 0
+    grid-auto-rows: minmax(60px, max-content)
+    align-items: start
+  &__ico,
+  &__social-ico
+    width: 20px
+    height: 20px
+    fill: #BDBDBD
+  &__ico
+    min-width: 40px
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+  &__item
+    display: flex
+    align-items: flex-start
+    &--contact:not(:last-child)
+      margin-bottom: 20px
+  &__link
+    color: inherit
+    text-decoration: none
+  &__title
+    margin: 0
+    color: $light
+    margin-bottom: 16px
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    &--contact
+      margin-bottom: 27px
+      padding-right: 50px
+      &-form
+        margin-bottom: 34px
+  &__logo
+    grid-row: 1/2
+    width: 166px
+    height: 192px
+    align-self: center
+  &__categories
+    grid-column: 3/4
+    grid-row: 1/3
+  &__additional
+    grid-column: 5/6
+  &__social
+    &-title
+      margin: 0
+      margin-right: 43px
+    &-network
+      grid-row: 2/4
+      grid-column: 5/8
+      display: flex
+    &-links
+      display: flex
+      align-items: center
+      min-width: 83px
+      justify-content: space-between
+
+  &__legal
+    // grid-row: 1/4
+    grid-column: 7/8
+  &__text
+    margin: 0
+    margin-bottom: 22px
+  &__contact
+    &-details
+      grid-column: 1/5
+      grid-row: 4/5
+      padding-right: 20px
+      padding-top: 15px
+    &-form
+      grid-column: 5/8
+  &__form
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+  &__input
+    width: 100%
+    &-wrapper
+      align-self: flex-start
+      margin-bottom: 15px
+      flex-basis: 48%
+      order: 1
+  &__message
+    background: #ffffff
+    border-radius: 4px
+    padding: 18px 23px
+    border: none
+    flex-basis: 100%
+    margin-bottom: 22px
+    height: 123px
+    resize: none
+    order: 2
+  &__button
+    min-width: 160px
+    padding: 18px 0
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    order: 3
+  &__require
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+    order: 4
+  &-bottom
+    display: flex
+    justify-content: space-between
+    margin-left: auto
+    align-items: center
+    max-width: 700px
+    padding-top: 94px
+    &__wrapper
+      max-width: 1110px
+      margin: 0 auto
+  &__payment
+    width: 136px
+  &-menu
+    padding: 0
+    list-style: none
+    display: flex
+    margin: 0
+    &__item:not(:last-child)
+      margin-right: 15px
+    &__link
+      font-size: 12px
+      line-height: 15px
+      text-decoration: none
+      color: $light
+  &__info
+    &-text
+      margin: 0
+    &-phone
+      &:not(:last-child)
+        display: block
+    &-link
+      text-decoration: none
+      color: inherit
+      margin: 0
+      &::before
+        content: ' '
+      &::after
+        content: ' '
+
+.address-link
+  cursor: pointer

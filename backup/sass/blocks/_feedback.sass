@@ -1,0 +1,92 @@
+.feedback
+  padding: 40px 0 70px 0
+  &__title
+    font-weight: 700
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0 auto
+    margin-bottom: 70px
+  &-slider
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 730px
+      margin: 45px auto 0 
+      padding: 0 95px 30px
+      position: relative
+      border-radius: 8px
+      background-color: #fff
+      &:before
+        content: ""
+        position: absolute
+        background-image: url("../img/decor-top.svg")
+        background-repeat: no-repeat
+        width: 70px
+        height: 48px
+        top: 13px
+        left: 62px
+      &:after
+        content: ""
+        position: absolute
+        background-image: url("../img/decor-bot.svg")
+        background-repeat: no-repeat
+        width: 70px
+        height: 48px
+        top: 119px
+        right: 60px
+    &__button
+      width: 30px
+      height: 30px
+      border: none
+      cursor: pointer
+      position: absolute
+      z-index: 10
+      top: 50%
+      transform: translateY(-100%)
+      background: transparent
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      outline: none
+      &--prev
+        left: 15px
+        background-image: url(../img/feedback-arrow-prev.svg)
+      &--next
+        right: 15px
+        background-image: url(../img/feedback-arrow-next.svg)
+  &__profile
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -45px
+    margin-bottom: 30px
+  &__avatar
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    object-fit: cover
+    margin-bottom: 9px
+  &__name
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $primary
+    margin: 0
+    margin-bottom: 10px
+  &__date
+    font-size: 10px
+    line-height: 13px
+    font-weight: normal
+    margin-bottom: 5px
+    color: #000
+  &__content
+    margin: 0
+    font-size: 12px
+    line-height: 160%
+    text-align: justify
+  &__rating
+    display: flex
+    align-items: flex-start

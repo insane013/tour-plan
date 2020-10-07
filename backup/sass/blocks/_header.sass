@@ -1,0 +1,85 @@
+.navbar
+  background-color: #ffffff
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 40px 0
+    &__menu-button
+      display: none
+  &__search
+    margin-right: auto
+    margin-left: 108px
+  &-menu
+    padding: 31px 0
+    background-color: $dark
+    &__list
+      list-style: none
+      margin: 0
+      padding: 0
+      display: flex
+      justify-content: space-between
+    &__link
+      text-decoration: none
+      color: $light
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+      text-align: center
+      text-transform: uppercase
+    &__item
+      &--mobile
+        &--visible
+          display: none
+
+.logo
+  width: 177px
+.search
+  display: flex
+  position: relative
+  border-radius: 6px
+  overflow: hidden
+  height: 40px
+  &__input
+    width: 350px
+    height: 100%
+    background: #F5FAFE
+    border: none
+    font-size: 12px
+    line-height: 15px
+    color: $text-color
+    padding-left: 23px
+    padding-right: 75px
+  &__button
+    position: absolute
+    width: 65px
+    height: 100%
+    right: 0
+    top: 0
+    cursor: pointer
+    border: none
+    border-radius: 0px 6px 6px 0px
+    &-ico
+      width: 16px
+      height: 16px
+      fill: $light
+.user
+  display: flex
+  align-items: center
+  text-decoration: none
+  color: $text-color
+  &__avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    object-fit: cover
+  &__name
+    margin-left: 18px
+    font-size: 14px
+    line-height: 18px
+
+.navbar
+  &__search, &__user
+    &--mobile
+      &--visible
+        display: none
