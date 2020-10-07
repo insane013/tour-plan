@@ -12,6 +12,7 @@
   <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ea66a7e0-bbab-4914-9756-393da01fc2f7"></script> -->
   <!-- <script src="js/map.js"></script> -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -19,7 +20,7 @@
   <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-up" data-aos-delay="300">
           <img class="logo__img" src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" />
         </a>
 
@@ -149,7 +150,7 @@
       </div>
       <!-- /.hotel-header -->
       <div class="hotel-grid">
-        <div class="swiper-container hotel-slider hotel-grid__slider">
+        <div class="swiper-container hotel-slider hotel-grid__slider" data-aos="fade-right" data-aos-delay="300">
           <div class="swiper-wrapper">
             <div class="swiper-slide hotel-slider__item">
               <img class="hotel-slider__image" src="img/slide-1.jpg" alt="slide" />
@@ -175,7 +176,7 @@
         <!-- /.hotel-slider -->
 
         <div class="hotel-grid__right-wrapper">
-          <div class="booking">
+          <div class="booking" data-aos="fade-left" data-aos-delay="500">
             <div class="booking__info">
               <div class="booking__price">
                 <span class="booking__start">price starts as</span>
@@ -215,7 +216,7 @@
             </button>
           </div>
           <!-- /.booking -->
-          <div class="hotel__map">
+          <div class="hotel__map" data-aos="fade-left" data-aos-delay="500">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.8201554201445!2d-80.75992364557472!3d32.13974698004126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc791b7607191b%3A0x98f2b586ea9394e7!2sGrand%20Hilton%20Head%20Inn%2C%20Ascend%20Hotel%20Collection!5e0!3m2!1sru!2s!4v1601827377999!5m2!1sru!2s"
               allowfullscreen="" aria-hidden="false" tabindex="0" class="map-frame"></iframe>
@@ -233,7 +234,7 @@
   <section class="package">
     <h2 class="package__title">Other packages</h2>
     <div class="container package-wrapper">
-      <div class="package-card package-card--big">
+      <div class="package-card package-card--big" data-aos="fade-up" data-aos-delay="100">
         <div class="package-card__image-wrapper package-card__image-wrapper--big"
           style="background-image: url('img/package-1.jpg')">
           <!-- <img
@@ -315,7 +316,7 @@
         <!-- /.package-card__property-wrapper -->
       </div>
       <!-- /.package-card package-card_big -->
-      <div class="package-card">
+      <div class="package-card" data-aos="fade-up" data-aos-delay="200">
         <div class="package-card__image-wrapper">
           <img class="package-card__img" src="img/package-2.jpg" alt="LUX* Belle Mare" />
           <span class="offer package-card__offer">Flash Offer</span>
@@ -365,7 +366,7 @@
         <!-- /.package-card__property-wrapper -->
       </div>
       <!-- /.package-card -->
-      <div class="package-card">
+      <div class="package-card" data-aos="fade-up" data-aos-delay="100">
         <div class="package-card__image-wrapper">
           <img class="package-card__img" src="img/package-3.jpg" alt="White Palace" />
           <span class="offer package-card__offer">Flash Offer</span>
@@ -415,7 +416,7 @@
         <!-- /.package-card__property-wrapper -->
       </div>
       <!-- /.package-card -->
-      <div class="package-card">
+      <div class="package-card" data-aos="fade-up" data-aos-delay="200">
         <div class="package-card__image-wrapper">
           <img class="package-card__img" src="img/package-4.jpg" alt="Luxury Place" />
           <span class="offer package-card__offer">Flash Offer</span>
@@ -465,7 +466,7 @@
         <!-- /.package-card__property-wrapper -->
       </div>
       <!-- /.package-card -->
-      <div class="package-card">
+      <div class="package-card" data-aos="fade-up" data-aos-delay="300">
         <div class="package-card__image-wrapper">
           <img class="package-card__img" src="img/package-5.jpg" alt="Hotel Five Star" />
           <span class="offer package-card__offer">Flash Offer</span>
@@ -675,7 +676,7 @@
     <div class="container">
       <h2 class="activities__title">Other activities</h2>
       <div class="activities__card-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img class="card__image" src="img/card-1.jpg" alt="The curious corner
               of chamarel" />
           <h3 class="card__title">The curious corner of chamarel</h3>
@@ -684,7 +685,7 @@
           </button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
           <img class="card__image" src="img/card-2.jpg" alt="Gymkhana club golf course" />
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button data-toggle="modal" data-href="#booking-modal" class="button card__button">
@@ -692,7 +693,7 @@
           </button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img class="card__image" src="img/card-3.jpg" alt="Tamarind falls hiking trip - full day" />
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button data-toggle="modal" data-href="#booking-modal" class="button card__button">
@@ -700,7 +701,7 @@
           </button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="400">
           <img class="card__image" src="img/card-4.jpg" alt="GThe blue marine discovery quest" />
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button data-toggle="modal" data-href="#booking-modal" class="button card__button">
@@ -713,6 +714,7 @@
     <!-- /.container -->
   </section>
   <!-- /.activities -->
+
   <footer class="footer">
     <div class="container footer-wrapper">
       <img class="logo footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
@@ -935,6 +937,7 @@
 
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/parallax.min.js"></script>
