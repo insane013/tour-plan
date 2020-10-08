@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Best Tour Plan - Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-    rel="preload" />
+    rel="preload" as="style" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ea66a7e0-bbab-4914-9756-393da01fc2f7"></script> -->
-  <!-- <script src="js/map.js"></script> -->
+  <link rel="stylesheet" href="css/lazyframe.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -216,10 +215,9 @@
             </button>
           </div>
           <!-- /.booking -->
-          <div class="hotel__map" data-aos="fade-up" data-aos-delay="500">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.8201554201445!2d-80.75992364557472!3d32.13974698004126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc791b7607191b%3A0x98f2b586ea9394e7!2sGrand%20Hilton%20Head%20Inn%2C%20Ascend%20Hotel%20Collection!5e0!3m2!1sru!2s!4v1601827377999!5m2!1sru!2s"
-              allowfullscreen="" aria-hidden="false" tabindex="0" class="map-frame"></iframe>
+          <div class="hotel__map lazyframe" data-aos="fade-up" data-aos-delay="500"
+            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.8201554201445!2d-80.75992364557472!3d32.13974698004126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc791b7607191b%3A0x98f2b586ea9394e7!2sGrand%20Hilton%20Head%20Inn%2C%20Ascend%20Hotel%20Collection!5e0!3m2!1sru!2s!4v1601827377999!5m2!1sru!2s"
+            allowfullscreen="" aria-hidden="false" tabindex="0" data-thumbnail="img/map.jpg">
           </div>
           <!-- /.map hotel__map -->
         </div>
@@ -717,7 +715,9 @@
 
   <footer class="footer">
     <div class="container footer-wrapper">
-      <img class="logo footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+      <a href="#">
+        <img class="logo footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+      </a>
       <div class="footer__block footer__categories">
         <h3 class="footer__title">ALL CATEGORIES</h3>
         <ul class="footer__list">
@@ -827,7 +827,7 @@
             <svg class="footer__ico">
               <use xlink:href="img/sprite.svg#footer-map-marker"></use>
             </svg>
-            <p class="footer__info-text address-link">
+            <p class="footer__info-text">
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
               States
             </p>
@@ -838,12 +838,12 @@
             </svg>
             <div class="footer__info-phone-wrapper">
               <span class="footer__info-phone">Tel (business hours) :
-                <a class="footer__info-link" href="tel:2691500">269 1500</a></span>
+                <a class="footer__info-link underlined" href="tel:2691500">269 1500</a></span>
               <span class="footer__info-phone">Tel (hotline) Monday - Saturday:
-                <a class="footer__info-link" href="tel:52566138">52-56-61-38</a>
+                <a class="footer__info-link underlined" href="tel:52566138">52-56-61-38</a>
                 (08:00 am – 20:00 pm)</span>
               <span class="footer__info-phone">Tel (hotline) Sunday:
-                <a class="footer__info-link" href="tel:52566138">52-56-61-38</a>
+                <a class="footer__info-link underlined" href="tel:52566138">52-56-61-38</a>
                 (08:00 am – 14:00 pm)
               </span>
             </div>
@@ -852,7 +852,8 @@
             <svg class="footer__ico">
               <use xlink:href="img/sprite.svg#footer-mail"></use>
             </svg>
-            <a class="footer__info-link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
+            <a class="footer__info-link underlined"
+              href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
           </li>
         </ul>
       </div>
@@ -879,8 +880,8 @@
       <!-- /.footer__contact-form -->
     </div>
     <!-- /.container footer-wrapper -->
-    <div class="footer-bottom__wrapper">
-      <div class="footer-bottom">
+    <div class="footer-bottom">
+      <div class="footer-bottom__wrapper">
         <ul class="footer-menu footer-bottom__menu">
           <li class="footer-menu__item">
             <a href="#" class="footer-menu__link">Disclaimer</a>
@@ -922,7 +923,7 @@
           <div class="modal__input-wrapper">
             <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
           </div>
-          <textarea class="textarea footer__message" placeholder="Message" name="message"></textarea>
+          <textarea class="textarea modal__message" placeholder="Message" name="message"></textarea>
           <button class="button modal__button" name="booking-modal-send">
             Send
           </button>
@@ -941,6 +942,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/lazyframe.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
