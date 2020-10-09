@@ -10,7 +10,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$sType = 2;
+$sType = 0;
 
 $sendTypes = array(
     'subscribe' => 'sub',
@@ -39,7 +39,7 @@ if ($sType==2) {
     <h2>Новое обращение</h2>
     <b>Имя:</b> $name<br>
     <b>Телефон:</b> $phone<br><br>
-    <b>Сообщение:</b><br>$message
+    <b>Сообщение:</b><br>$message<br><br>$sType
     ";
 }
 if ($sType==3) {
@@ -74,6 +74,7 @@ try {
 
     // Получатель письма
     $mail->addAddress('marsel092002@gmail.com');  
+    $mail->addAddress('accaunt.dota2.temp02@gmail.com'); 
 
 // Отправка сообщения
 $mail->isHTML(true);
@@ -91,8 +92,8 @@ else {$result = "error";}
 
 
 // Отображение результата
-if ($sub == false){
-    header('Location: thanks.html');
-} else {
+if ($sType == 1){
     header('Location: thanks-subscribe.html');
+} else {
+    header('Location: thanks.html');
 }

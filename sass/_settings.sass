@@ -16,6 +16,7 @@ img
   background: $primary
   border-radius: 4px
   color: $light
+  border: 1px solid $primary
 .container
   max-width: 1110px
   margin: 0 auto
@@ -33,6 +34,10 @@ img
   height: 50px
   width: 255px
   order: 1
+  &::placeholder
+    opacity: 1
+    color: $footer-text
+
 .textarea
   background: #ffffff
   border-radius: 4px
@@ -40,6 +45,9 @@ img
   border: none
   height: 123px
   resize: none
+  &::placeholder
+    opacity: 1
+    color: $footer-text
 
 .error
   color: $primary
@@ -69,3 +77,9 @@ body.modal-open
   position: absolute
   top: 65px
   left: 0
+
+.modal #name-error,
+.modal #phone-error,
+.modal #email-error
+  display: block
+  margin-top: 5px
